@@ -11,12 +11,18 @@ const Signin=()=> {
      const handleChangeP=(e)=>{
         setPassword(e.target.value);
      }
+
+     const handleSubmit=(e)=>{
+        console.log(email);
+        console.log(password);
+        e.preventDefault();
+     }
      
   return (
     <div className="container pt-5">
     <div className="row justify-content-center">
     <div className="col-sm-6">
-    <form >
+    <form onSubmit={handleSubmit}>
   <div className="form-group">
     <label htmlFor="exampleInputEmail1">Email address</label>
     <input type="email" value={email} onChange={handleChangeE} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
