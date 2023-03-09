@@ -5,7 +5,7 @@ import Signedoutlinks from './signedoutlinks';
 export default function Navbar() {
   return (
     <div>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary bg-light" data-bs-theme="light">
   <div className="container-fluid">
     <a className="navbar-brand" href="/">PlanYaar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
