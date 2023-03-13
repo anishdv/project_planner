@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {legacy_createStore as createStore} from 'redux'
+import {legacy_createStore as createStore, applyMiddleware} from 'redux'
 import rootReducer from './store/reducers/rootReducer';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 
-const store=createStore(rootReducer);
+const store=createStore(rootReducer,applyMiddleware(thunk)); // store enhancer can have more than one middlwares
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
